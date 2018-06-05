@@ -115,6 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Origem.cpp" />
+    <ClCompile Include="Simpletron.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Simpletron.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
