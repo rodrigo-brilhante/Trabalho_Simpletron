@@ -5,8 +5,6 @@
 #include <iostream>
 #include <iomanip>
 #include "Simpletron.h"
-#include <fstream>
-#include <string>
 
 using namespace std;
 
@@ -39,7 +37,7 @@ Simpletron::Simpletron()
 
 	for (int i = 0; i < 100; i++)
 	{
-		memory[i] = +0000;
+		memory[i] = 0;
 	}
 }
 
@@ -172,8 +170,8 @@ void Simpletron::load(char *n)
 
 bool Simpletron::validation(int x)
 {
-	x = x / 100;
-	switch (x)
+	operand = x / 100;
+	switch (operand)
 	{
 	case INC:
 		return true;
